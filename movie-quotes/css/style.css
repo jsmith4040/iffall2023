@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'ghostbusters';
+    src: url(GHOSTBUS.TTF);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'ghostbusters', fantasy;
+    color: crimson;
+    font-size: 350%;
+}
+
+h2 {
+    text-align: center;
+    text-indent: 0px;
+    font-family: 'ghostbusters', fantasy;
+}
+
+div {
+    background-color:darkred;
+    color: ghostwhite;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    text-indent: 250px;
+}
+
+i {
+    color:lightgray;
+}
