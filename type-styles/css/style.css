@@ -1,0 +1,95 @@
+html {
+    font-size: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.styledFont {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.4em;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4em;
+}
+
+h3 {
+    font-size: .6rem;
+    margin-bottom: 0.2em;
+    font-weight: 400;
+}
+
+p {
+    margin-top: 0;
+}
+
+p.Normal {
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+p.None {
+    text-decoration: none;
+    text-transform: none;
+}
+
+p.Bold {
+    font-weight: bold;
+}
+
+p.Italic {
+    font-style: italic;
+}
+
+p.Wide {
+    letter-spacing: .3em;
+}
+
+p.Narrow {
+    letter-spacing: -.06em;
+}
+
+p.Underline {
+    text-decoration: underline;
+}
+
+p.LineThrough {
+    text-decoration: line-through;
+}
+
+p.Overline {
+    text-decoration: overline;
+}
+
+p.Uppercase {
+    text-transform: uppercase;
+}
+
+p.Lowercase {
+    text-transform: lowercase;
+}
+
+p.Capitalize {
+    text-transform: capitalize;
+}
