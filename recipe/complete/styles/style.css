@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-image: url(../images/lasagna_bg.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+footer {
+    text-align: center;
+    background-color: #353c2f;
+    color:#626f57;
+    font-size: 10pt;
+    padding: 3vh 0;
+    margin: 3vh 0 0 0;
+}
+
+footer a {
+    color: #626f57;
+}
+
+h1 {
+    margin: 0;
+    color: #626f57;
+    font-size: 100pt;
+    padding-top: 38vh;
+    font-style: italic;
+    letter-spacing: 7.5pt;
+}
+
+h2 {
+    font-size: 30pt;
+    font-weight: 300;
+    color: black;
+}
+
+h3 {
+    font-size: 16pt;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 20pt;
+    font-weight: 600;
+    color:#626f57;
+    margin: 0 0 30px 0;
+}
+
+h5 {
+    color:#626f57;
+    font-size: 25pt;
+    font-weight: 600;
+    margin: 4vh 0;
+}
+
+.allergens h5 {
+    color: #a0280e;
+}
+
+#arrowdown {
+    padding-top: 22vh;
+    color: #626f57; 
+}
+
+.column_container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.instructions .column_container, .allergens .column_container {
+    width: 70%;
+}
+
+.allergens .column_container {
+    border: #a0280e dashed 2pt;
+    border-radius: 6pt;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.link_button {
+    background-color:#626f57;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 10pt;
+    border-radius: 6pt;
+    display: inline-block;
+}
+
+.link_button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.recipe_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 5vh 0;
+}
+
+.recipe_info li {
+    width: 23%;
+    border: solid 1pt #626f57;
+    margin: 6px;
+    border-radius: 6pt;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border: solid #626f57 2pt;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.filled {
+    background-color: #626f57;
+}
+
+#rating_box {
+    margin-bottom: 30px;
+}
+
+.grid, .grid_3col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 50%;
+}
+
+.grid_3col div {
+    width: 33%;
+}
+
+.ingredients_and_equipment ul {
+    padding: 2vh 8vh;
+    margin: 0 6vh;
+    background-color: #353c2f;
+    color: white;
+    border-radius: 6pt;
+    list-style-type: circle;
+}
+
+.ingredients_and_equipment li {
+    text-align: left;
+    line-height: 2;
+    font-size: 10pt;
+}
+
+.storage ul {
+    list-style-type: circle;
+    text-align: left;
+    padding: 0 40px;
+}
+
+#ingredients_pic {
+    background-image: url(../images/lasagnaingredients_dark.png);
+    background-size: cover;
+    height: 50vh;
+}
+
+#save_for_later {
+    background-image: url(../images/lasagna2.png);
+    background-size: cover;
+    height: 50vh;
+}
+
+#ingredients_pic h1, #save_for_later h1 {
+    padding-top: 14vh;
+    text-align: center;
+}
+
+#equipment {
+    width: 38vw;
+    height: 26vh;
+    object-fit: cover;
+    padding-top: 2vh;
+    border-radius: 13pt;
+}
+
+.instructions ol {
+    list-style-type: none;
+    counter-reset: item;
+    line-height: 2;
+    padding-left: 90px;
+}
+
+.instructions .step {
+    counter-increment: item;
+    text-align: left;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.instructions .step:before {
+    margin-right: 10px;
+    content: counter(item);
+    background-color: #353c2f;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14pt;
+    position: absolute;
+    left: -50px;
+}
+
+.step_images {
+    padding: 25px 0 0 0;
+}
+
+.step_img {
+    list-style-type: none;
+}
+
+.step_img img {
+    width: 15em;
+    height: 16em;
+    object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+    .ingredients_and_equipment li, .storage li, .link_button {
+        font-size: 14pt;
+    }
+
+    .instructions .step {
+        font-size: 18pt;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 70pt;
+    }
+
+    .recipe_info li {
+        width: 45%;
+    }
+
+    .grid div {
+        width: 100%;
+    }
+    
+    .grid_3col div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 40pt;
+    }
+    
+    .recipe_info li {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 22pt;
+    }
+}
+
+@media (max-width: 393px) {
+    h1 {
+        font-size: 30pt;
+    }
+
+    h3 {
+        font-size: 12pt;
+    }
+
+    h5 {
+        font-size: 18pt;
+    }
+
+    .step_img img {
+        height: 14em;
+        width: 12em;
+    }
+
+    .ingredients_and_equipment ul {
+        padding: 2vh 4vh;
+    }
+
+    .instructions ol {
+        padding-left: 40px;
+    }
+}
