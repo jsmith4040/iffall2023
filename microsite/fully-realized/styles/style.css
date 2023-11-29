@@ -1,0 +1,530 @@
+/* base styling */
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #002856;
+}
+
+section, #footer-container {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+/* nav styling */
+
+#hamburger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 30pt;
+}
+
+#nav {
+    display: none;
+    background-color: #002856;
+    justify-content: space-around;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    position: relative;
+    padding: 10px 0;
+}
+
+#nav li > a {
+    color: rgb(203, 203, 203);
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: 200;
+    z-index: 10;
+}
+
+#nav li > a:hover {
+    color: white;
+    border-bottom: 1pt solid white;
+}
+
+#nav i {
+    color: rgb(203, 203, 203);
+    font-size: 15pt;
+    z-index: 10;
+    position: relative;
+    top: 5px;
+}
+
+#page-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -18%;
+    background-color: #ae000e;
+    z-index: 10;
+}
+
+#page-nav a {
+    color: rgb(203, 203, 203);
+    font-size: 15pt;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+#page-nav a:hover {
+    color: white;
+    background-color: #79000a;
+}
+
+#nav-between-gymnasts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 13pt;
+    color:#fff;
+}
+
+#nav-between-gymnasts .left {
+    padding: 10px;
+    background-color: #002856;
+    float: left;
+}
+
+#nav-between-gymnasts .right {
+    padding: 10px;
+    background-color: #002856;
+    float: right;
+}
+
+#nav-between-gymnasts a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav-links {
+    text-align: left;
+    float: left;
+}
+
+#nav-links a {
+    display: block;
+    text-decoration: underline;
+    color: #adadad;
+}
+
+/* above fold styling */
+
+.above_fold {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homepage {
+    background-image: url(../images/USA\ Team\ Photo\ Transparent.png);
+}
+
+#simone-page {
+    background-image: url(../images/simone_actionshot_transparent.png);
+}
+
+#jade-page {
+    background-image: url(../images/jade_actionshot_transparent.png);
+}
+
+#jordan-page {
+    background-image: url(../images/jordan_actionshot_transparent.png);
+}
+
+#sunisa-page {
+    background-image: url(../images/sunisa_actionshot_transparent.png);
+}
+
+#grace-page {
+    background-image: url(../images/grace_actionshot_transparent.png);
+}
+
+#mykayla-page {
+    background-image: url(../images/mykayla_actionshot_transparent.png);
+}
+
+/* text styling */
+
+h1 {
+    font-size: 50pt;
+    font-weight: 500;
+    width: 70%;
+    margin: 10px auto;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 50pt;
+    font-weight: 300;
+    font-style: italic;
+    width: 50%;
+    margin: 10px auto;
+}
+
+h3 {
+    font-size: 20pt;
+    font-weight: 500;
+    margin: 0;
+    padding: 30px 0;
+    z-index: 1;
+}
+
+#team-photos h3 {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.8), white);
+}
+
+p {
+    text-align: left;
+    font-size: 16pt;
+}
+
+footer p {
+    color: #adadad;
+    text-align: right;
+    font-size: 12pt;
+}
+
+/* grid styling */
+
+#team-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#team-photos a {
+    display: block;
+    position: relative;
+    width: 25%;
+    margin: 20px;
+    text-decoration: none;
+    color: #002856;
+}
+
+#team-photos img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.img_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.img_grid img {
+    width: 30%;
+    aspect-ratio: 1/1.3;
+    object-fit: cover;
+}
+
+/* headers styling */
+
+.header_photo {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+#team-w-medals {
+    background-image: url(../images/team\ w\ medals.png);
+}
+
+#simone-split {
+    background-image: url(../images/simone_splitjump.png);
+    background-position: 50% 15%;
+}
+
+#simone-pose {
+    background-image: url(../images/simone_pose.png);
+    background-position: 50% 25%;
+}
+
+#simone-pose2 {
+    background-image: url(../images/simone_pose2.png);
+    background-position: 50% 15%;
+}
+
+#jade-twist {
+    background-image: url(../images/jade_twist.png);
+}
+
+#jade-olympics {
+    background-image: url(../images/jade_olympics.png);
+    background-position: 50% 15%;
+}
+
+#jade-college {
+    background-image: url(../images/jade_beaver.png);
+}
+
+#jordan-floorpose {
+    background-image: url(../images/jordan_floorpose.png);
+}
+
+#jordan-olympics {
+    background-image: url(../images/jordan_olympics.png);
+}
+
+#jordan-ucla {
+    background-image: url(../images/jordan_ucla.png);
+    background-position: 50% 15%;
+}
+
+#sunisa-leap {
+    background-image: url(../images/sunisa_leap.png);
+    background-position: 50% 15%;
+}
+
+#sunisa-olympics {
+    background-image: url(../images/sunisa_olympics.png);
+}
+
+#sunisa-auburn {
+    background-image: url(../images/sunisa_auburn.png);
+}
+
+#grace-laydown {
+    background-image: url(../images/grace_laydown.png);
+}
+
+#grace-split {
+    background-image: url(../images/grace_split.png);
+}
+
+#grace-utah {
+    background-image: url(../images/grace_utah.png);
+    background-position: 50% 30%;
+}
+
+#mykayla-finish {
+    background-image: url(../images/mykayla_finish.png);
+}
+
+#mykayla-olympics {
+    background-image: url(../images/mykayla_olympics.png);
+    background-position: 50% 15%;
+}
+
+#mykayla-utah {
+    background-image: url(../images/mykayla_utah.png);
+}
+
+/* simone page specific styling */
+
+blockquote {
+    width: 50%;
+    margin: 40px auto;
+    font-size: 20pt;
+    font-style: italic;
+    font-weight: 300;
+}
+
+#readmore {
+    background-color: #002856;
+    color: white;
+    font-size: 15pt;
+    font-family: 'Source Sans 3', sans-serif;
+    border: none;
+    width: 30%;
+    padding: 5px 0;
+    margin-bottom: 30px;
+}
+
+#readmore:hover, #nav-between-gymnasts .left:hover, #nav-between-gymnasts .right:hover {
+    box-shadow: 5px 5px 5px #adadad;
+}
+
+#twisties {
+    display: none;
+}
+
+#skills-table {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#skills-table th {
+    background-color: #002856;
+    color: #fff;
+    padding: 8px 2px;
+    font-size: 14pt;
+}
+
+#skills-table td {
+    padding: 5px 2px;
+    border: 1pt solid #002856;
+}
+
+/* misc. styling */
+
+#rings {
+    width: 15vw;
+}
+
+#flame {
+    width: 10vw;
+}
+
+#credits {
+    float: right;
+}
+
+/* responsive styling */
+
+@media screen and (max-width:850px) {
+    h1, h2 {
+        font-size: 45pt;
+    }
+    
+    h3 {
+        font-size: 15pt;
+        padding: 20px 0;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    #hamburger {
+        font-size: 25pt;
+    }
+
+    #nav i, #nav li > a, #page-nav a {
+        font-size: 13pt;
+    }
+
+    #nav i {
+        top: 3px;
+    }
+
+    .header_photo {
+        height: 200px;
+    }
+
+    blockquote {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #nav i, #nav li > a, #page-nav a {
+        font-size: 11pt;
+    }
+
+    #nav i {
+        top: 0px;
+    }
+
+    #page-nav a {
+        padding: 10px;
+    }
+    
+    #team-photos a {
+        width: 40%;
+    }
+
+    #team-photos h3 {
+        top: 75%;
+    }
+    
+    #rings {
+        width: 25vw;
+    }
+
+    #flame {
+        width: 18vw;
+    }
+
+    #readmore {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    h1, h2 {
+        font-size: 36pt;
+    }
+    
+    #team-photos h3 {
+        top: 70%;
+    }
+
+    .header_photo {
+        height: 150px;
+    }
+
+    footer a, footer p {
+        font-size: 10pt;
+    }
+
+    blockquote {
+        font-size: 15pt;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .img_grid {
+        justify-content: space-evenly;
+    }
+    
+    .img_grid img {
+        width: 35%;
+        margin: 10px 0;
+    }
+
+    #readmore {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    h1, h2 {
+        font-size: 30pt;
+    }
+    
+    #team-photos a {
+        width: 70%;
+    }
+
+    #team-photos h3 {
+        top: 75%;
+    }
+
+    .img_grid img {
+        width: 40%;
+        margin: 5px 0;
+    }
+}
