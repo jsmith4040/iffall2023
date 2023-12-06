@@ -1,0 +1,57 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #e0dff6;
+    color: #2b2b30;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+
+footer a {
+    color: #6666a5;
+}
+
+.portfolio_item {
+    width: 25%;
+    text-decoration: none;
+    color: #2b2b30;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.portfolio_item:hover {
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
+}
+
+.portfolio_image {
+    width: 100%;
+    aspect-ratio: 2/1.15;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
